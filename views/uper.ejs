@@ -1,0 +1,69 @@
+<%- include header.ejs %>
+
+<body>
+<%- include topLink.ejs %>
+<div class="container">
+    <h1><%= title %></h1>
+
+    <div class="row">
+        <!--right-->
+        <div class="col-md-9 well">
+            <div class="col-md-9 ">
+                    <h4>按条件搜索：</h4>
+                <hr>
+                    <div class="inline">
+
+                        种类  <select class=" input-sm">
+                        <option value="">武器</option>
+                        <option value="">防具</option>
+                        <option value="">首饰</option>
+                    </select>
+                        品级  <select class=" input-sm">
+                        <option style="color:#ffff00" value="">史诗</option>
+                        <option style="color:mediumvioletred" value="">粉色</option>
+                        <option style="color:mediumvioletred" value="">领主粉</option>
+                        <option style="color:brown" value="">异界</option>
+                        <option style="color:purple" value="">紫色</option>
+                        <option style="color:deepskyblue" value="">蓝色</option>
+                    </select>
+                        等级  <select class=" input-sm">
+                        <option value="">80</option>
+                        <option value="">70</option>
+                        <option value="">65</option>
+                        <option value="">60</option>
+                        <option value="">55</option>
+                        <option value="">50</option>
+                        <option value="">40</option>
+                        <option value="">30</option>
+                    </select>
+                        <button type="submit" class="btn btn-default pull-right" onclick="showWeaps()">确定</button>
+
+                    </div>
+                <hr>
+                <div class="weap-list">
+                    <ul class="list-inline">
+                        <!--<li><img src="/images/2.ico" class="img-rounded"  style="width:28px;height:28px" onclick="choose()"/></li>-->
+                        <!--<li><img src="/images/2.ico" class="img-rounded"  style="width:28px;height:28px" /></li>-->
+                        <!--<li><img src="/images/2.ico" class="img-rounded"  style="width:28px;height:28px" /></li>-->
+                        <!--<li><img src="/images/2.ico" class="img-rounded"  style="width:28px;height:28px" /></li>-->
+                        <!--<li><img src="/images/2.ico" class="img-rounded"  style="width:28px;height:28px" /></li>-->
+                        <!--<li><img src="/images/2.ico" class="img-rounded"  style="width:28px;height:28px" /></li>-->
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="center1">
+                    <div id="show" class="center1 px-64 "></div>
+                    <button type="button" class=" btn btn-success top10" onclick="up()">强化</button>
+                </div>
+            </div>
+        </div>
+
+        <!--left-->
+        <div class="col-md-3 well">3</div>
+    </div>
+</div>
+
+</body>

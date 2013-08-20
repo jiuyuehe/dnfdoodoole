@@ -1,0 +1,55 @@
+<%- include header.ejs %>
+
+<body>
+<!-- Fixed navbar -->
+<%- include topLink.ejs %>
+
+<div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1><%= title %></h1>
+
+    <!--<div class="jumbotron">-->
+        <!--<h1><%= title %></h1>-->
+
+        <!--<p>...</p>-->
+
+        <!--<p><a class="btn btn-primary btn-lg">Learn more</a></p>-->
+    <!--</div>-->
+
+    <div class="row">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="center">
+                    <div id="show" class="center" style="width: 60px; height: 60px; border: 1px red dotted"></div>
+                    <button type="button" class="btn btn-default" onclick="up()">add</button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <ul class="list-inline">
+                    <li><img src="/images/2.ico" class="img-rounded" onclick="choose()"/></li>
+                    <li><img src="/images/2.ico" class="img-rounded"/></li>
+                    <li><img src="/images/2.ico" class="img-rounded"/></li>
+                    <li><img src="/images/2.ico" class="img-rounded"/></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <hr>
+</div>
+<!-- /container -->
+
+</body>
+
+<%- include footer.ejs %>
