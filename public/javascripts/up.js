@@ -83,3 +83,8 @@ function up (){
 
 
 }
+
+
+function getCode(){
+    $.ajax()
+}
