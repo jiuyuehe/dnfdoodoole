@@ -2,216 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd34624d-85a5-4746-b020-d571c87baf5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/registerModal.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/vcode.js" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\Changes.md" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\License" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\benchmark\analyze.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\benchmark\parse-100k-blog-rows.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\benchmark\select-100k-blog-rows.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\index.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\Connection.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\ConnectionConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\Pool.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\PoolConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\Auth.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\PacketHeader.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\PacketWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\Parser.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\Protocol.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\ResultSet.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\SqlString.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\constants\charsets.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\constants\client.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\constants\errors.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\constants\field_flags.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\constants\server_status.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\constants\types.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ClientAuthenticationPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ComChangeUserPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ComPingPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ComQueryPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ComQuitPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ComStatisticsPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\EmptyPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\EofPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ErrorPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\Field.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\FieldPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\HandshakeInitializationPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\LocalDataFilePacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\OkPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\OldPasswordPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\ResultSetHeaderPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\RowDataPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\StatisticsPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\UseOldPasswordPacket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\packets\index.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\ChangeUser.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\Handshake.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\Ping.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\Query.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\Quit.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\Sequence.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\Statistics.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\lib\protocol\sequences\index.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\LICENCE" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\README.md" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\bignumber.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\bignumber.min.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\doc\API.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\package.json" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\bignumber-vs-bigdecimal.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\bigtime-OOM.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\bigtime.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_GWT\BigDecTest.class" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_GWT\BigDecTest.java" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_GWT\LICENCE.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_GWT\bigdecimal.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_GWT\bugs.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_ICU4J\BigDecimal-all-last.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_ICU4J\BigDecimal-all-last.min.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\perf\lib\bigdecimal_ICU4J\LICENCE.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\abs.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\base-in.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\base-out.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\browser\bignumber-vs-number.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\browser\console-errors.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\browser\every-test.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\browser\quick-test.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\browser\single-test.html" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\ceil.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\cmp.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\config.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\div.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\every-test.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\floor.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\minus.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\mod.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\neg.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\others.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\plus.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\pow.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\quick-test.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\round.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\sqrt.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\times.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\toExponential.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\toFixed.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\toFraction.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\toPrecision.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\toString.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\bignumber.js\test\v8-LICENCE.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\index.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\package.json" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\controllers\main-Controller.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\controllers\notthis.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\controllers\other-Controller.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\mydir\foo.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\mydir\hello.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\mydir\sub\config.json" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\mydir\sub\no.2js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\mydir\sub\yes.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\node_modules\require-all\test\test.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\package.json" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\FakeServer.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\common.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\fixtures\data.csv" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-bad-credentials.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-bulk-insert.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-callback-errors-are-not-caught.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-change-user-fatal-error.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-change-user.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-connection-config-flags-affected-rows.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-connection-config-flags.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-connection-destroy.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-custom-query-format.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-custom-typecast.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-destroy-while-streaming-rows.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-double-connect.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-drain-event.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-end-callback.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-escape-id.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-exception-safety.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-fatal-auth-error-going-to-all-callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-fatal-auth-error-without-handlers.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-fatal-network-error-going-to-all-callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-fatal-network-error-without-handlers.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-fatal-query-error-without-callback.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-host-denied-error.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-implicit-connect.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-insert-results.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-load-data-infile.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-long-stack-traces-for-connection-errors.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-long-stack-traces.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-multiple-statements-streaming.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-multiple-statements-with-error.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-multiple-statements.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-nested-tables-query.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-normal-error-without-handler.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-normal-query-error-without-callback.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-old-password.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-ping.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-procedure-with-multiple-selects.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-procedure-with-single-select.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-query-after-destroy.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-query-after-end-without-callback.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-query-after-end.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-query-dates-as-strings.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-query-escape-id.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-query-escaping.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-select-1.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-select-empty-string.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-send-and-receive-large-packets.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-server-timeout-disconnect.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-server-unexpected-disconnect.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-statistics.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-streaming-rows-quick-pause-resume.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-streaming-rows.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-timezones.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-transaction-commit.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-transaction-rollback.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-type-cast-null-fields.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-type-cast-query.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-type-casting.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-unix-domain-socket.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\connection\test-zerofill-results.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\pool\test-connection-limit.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\pool\test-destroy-connection.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\pool\test-end-empty.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\integration\pool\test-get-connection.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\run.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\unit\protocol\test-Parser.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\unit\protocol\test-SqlString.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\test\unit\test-ConnectionConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\node_modules\mysql\tool\generate-error-constants.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/loginModal.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/respond.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.ejs" afterPath="$PROJECT_DIR$/views/header.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/mongodb.js" afterPath="$PROJECT_DIR$/models/mongodb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index2.ejs" afterPath="$PROJECT_DIR$/views/index2.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/registerModal.ejs" afterPath="$PROJECT_DIR$/views/registerModal.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/topLink.ejs" afterPath="$PROJECT_DIR$/views/topLink.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/up.js" afterPath="$PROJECT_DIR$/public/javascripts/up.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dnfdoodoole.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377044759908" ignored="false" />
+    <file path="/Dummy.txt" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377154017449" ignored="false" />
     <file path="/mongodb.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377050276920" ignored="false" />
     <file path="/app.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377066087485" ignored="false" />
-    <file path="/topLink.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377056857973" ignored="false" />
+    <file path="/topLink.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377154729107" ignored="false" />
     <file path="/package.json" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377065592926" ignored="false" />
     <file path="/user.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377049490768" ignored="false" />
-    <file path="/registerModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377076041516" ignored="false" />
-    <file path="/index.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377078061571" ignored="false" />
-    <file path="/up.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377069341906" ignored="false" />
+    <file path="/registerModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377154049012" ignored="false" />
+    <file path="/index.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377134357441" ignored="false" />
+    <file path="/up.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377134973555" ignored="false" />
+    <file path="/header.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377133754681" ignored="false" />
+    <file path="/loginModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377154766315" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,10 +44,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="registerModal.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="registerModal.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/registerModal.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="80" selection-start="477" selection-end="481" vertical-scroll-proportion="-0.14285715">
+            <state line="48" column="36" selection-start="2467" selection-end="2467" vertical-scroll-proportion="-31.384615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginModal.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/loginModal.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="79" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.71428573">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="topLink.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/topLink.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="17" selection-start="991" selection-end="991" vertical-scroll-proportion="-17.653847">
               <folding />
             </state>
           </provider>
@@ -243,7 +74,7 @@
       <file leaf-file-name="up.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="12" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
+            <state line="87" column="3" selection-start="1747" selection-end="1756" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -253,15 +84,6 @@
         <entry file="file://$PROJECT_DIR$/models/vcode.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="63" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topLink.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/topLink.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="73" selection-start="712" selection-end="716" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
@@ -279,10 +101,8 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="22" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="40" column="19" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -290,7 +110,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="294" selection-end="327" vertical-scroll-proportion="0.0">
+            <state line="29" column="48" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -299,7 +119,7 @@
       <file leaf-file-name="index2.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index2.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="18" selection-start="12" selection-end="18" vertical-scroll-proportion="-0.0">
+            <state line="15" column="75" selection-start="379" selection-end="379" vertical-scroll-proportion="-9.807693">
               <folding />
             </state>
           </provider>
@@ -308,16 +128,7 @@
       <file leaf-file-name="header.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="70" selection-start="209" selection-end="209" vertical-scroll-proportion="-4.576923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="-9.153846">
+            <state line="9" column="20" selection-start="296" selection-end="296" vertical-scroll-proportion="-5.8846154">
               <folding />
             </state>
           </provider>
@@ -344,20 +155,23 @@
         <option value="$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/models/mongodb.js" />
-        <option value="$PROJECT_DIR$/views/header.ejs" />
-        <option value="$PROJECT_DIR$/views/topLink.ejs" />
         <option value="$PROJECT_DIR$/models/vcode.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/public/javascripts/respond.min.js" />
+        <option value="$PROJECT_DIR$/views/header.ejs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/index2.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/up.js" />
         <option value="$PROJECT_DIR$/views/registerModal.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/topLink.ejs" />
+        <option value="$PROJECT_DIR$/views/loginModal.ejs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="90" />
-    <option name="y" value="55" />
+    <option name="x" value="101" />
+    <option name="y" value="81" />
     <option name="width" value="1622" />
     <option name="height" value="926" />
   </component>
@@ -387,6 +201,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -481,12 +296,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\github\dnfdoodoole\views" />
+      <recent name="H:\github\dnfdoodoole\public\javascripts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -509,7 +329,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="55" width="1622" height="926" extended-state="0" />
+    <frame x="101" y="81" width="1622" height="926" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -591,25 +411,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="54" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="78" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="8" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/db.js">
@@ -621,9 +425,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/mongodb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="66" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js">
@@ -633,16 +435,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index2.ejs">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="12" selection-end="18" vertical-scroll-proportion="-0.0">
+        <state line="14" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/respond.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="-9.153846">
+        <state line="5" column="3180" selection-start="4046" selection-end="4046" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="20" selection-start="296" selection-end="296" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
@@ -654,9 +465,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="70" selection-start="209" selection-end="209" vertical-scroll-proportion="-4.576923">
+        <state line="29" column="48" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="19" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index2.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="75" selection-start="379" selection-end="379" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="3" selection-start="1747" selection-end="1756" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -668,39 +500,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
+    <entry file="file://$PROJECT_DIR$/views/registerModal.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="12" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0">
+        <state line="48" column="36" selection-start="2467" selection-end="2467" vertical-scroll-proportion="-31.384615">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="294" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="22" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/topLink.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="73" selection-start="712" selection-end="716" vertical-scroll-proportion="-9.807693">
+        <state line="27" column="17" selection-start="991" selection-end="991" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/registerModal.ejs">
+    <entry file="file://$PROJECT_DIR$/views/loginModal.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="80" selection-start="477" selection-end="481" vertical-scroll-proportion="-0.14285715">
+        <state line="36" column="79" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.71428573">
           <folding />
         </state>
       </provider>

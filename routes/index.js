@@ -31,7 +31,13 @@ exports.getCode = function (req, res) {
 };
 
 exports.index = function (req, res) {
-    res.render('index2', { title: 'doodoole' });
+    res.render('index2', {
+        title: 'doodoole',
+        user: req.session.user,
+        success:req.flash('success').toString(),
+        error:req.flash('error').toString()
+    });
+
 };
 
 exports.uper = function (req, res) {
@@ -57,8 +63,8 @@ exports.doreg = function (req, res) {
         req.flash('error','两次输入的密码不一致!');
        // return res.redirect('/reg');
        // res.setHeader("status", "200");
-        res.send(200);
-        return ;
+//        res.send(200);
+        return res.redirect("/");
     }
     //生成密码的散列值
     var md5 = crypto.createHash('md5'),

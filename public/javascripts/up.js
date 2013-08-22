@@ -25,7 +25,6 @@ function showWeaps(){
        l +=list;
     }
     $(".list-inline").html(l);
-
 }
 
 
@@ -87,4 +86,8 @@ function up (){
 
 function getCode(){
     $.ajax()
+}
+
+function doregister(){
+
 }

@@ -1,0 +1,43 @@
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">用户登录</h4>
+            </div>
+
+            <form class="form-horizontal" role="form" method="post" action="/reg">
+
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-8">
+                        <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="通过email进行注册">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword1" class="col-lg-2 control-label">密码</label>
+                    <div class="col-lg-8">
+                        <input type="password" name="password" class="form-control" id="inputPassword1" placeholder="您需要设置的密码">
+                    </div>
+                </div>
+
+                <!--<div class="form-group">-->
+                    <!--<label for="inputPassword1" class="col-lg-2 control-label">验证码</label>-->
+                    <!--<div class="col-lg-4">-->
+                        <!--<input type="text" class="form-control" id="code" placeholder="验证码"><a href="#" onclick="getCode()">点击获取验证码</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button"  class="btn btn-primary" onclick="dologin()">登录</button>
+
+            </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
