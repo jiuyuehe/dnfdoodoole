@@ -4,7 +4,6 @@
 
 var express = require('express')
     , routes = require('./routes')
-    , user = require('./routes/user')
     , http = require('http')
     , path = require('path')
     , MongoStore = require('connect-mongo')(express)
@@ -54,7 +53,7 @@ app.get('/login', routes.login);
 app.post('/login', routes.dologin);
 app.get('/logout', routes.logout);
 app.get('/uper', routes.uper);
-app.get('/getCode', routes.getCode);
+app.post('/getCode', routes.getCode);
 
 
 http.createServer(app).listen(app.get('port'), function () {

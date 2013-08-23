@@ -3,42 +3,48 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">用户注册</h4>
+                <h4 class="modal-title">欢迎您注册doodoole</h4>
             </div>
 
-            <form class="form-horizontal" role="form" method="post" action="/reg">
+            <form id="regForm" class="form-horizontal" role="form" method="post" action="/reg">
 
             <div class="modal-body">
 
                 <div class="form-group">
                     <label for="inputEmail1" class="col-lg-2 control-label">昵称</label>
                     <div class="col-lg-8">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="填一个您中意的名字">
+                        <input type="text" name="niname" class="form-control" id="niname" placeholder="填写2-16个字符">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-8">
-                        <input type="email" name="email" class="form-control" id="inputEmail1" placeholder="通过email进行注册">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="通过email进行注册">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPassword1" class="col-lg-2 control-label">密码</label>
                     <div class="col-lg-8">
-                        <input type="password" name="password" class="form-control" id="inputPassword1" placeholder="您需要设置的密码">
+                        <input type="password" name="password" class="form-control" id="password" placeholder="密码为6-16个字符组成">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPassword1" class="col-lg-2 control-label">重复密码</label>
                     <div class="col-lg-8">
-                        <input type="password"  name="password-repeat" class="form-control" id="inputPassword2" placeholder="请再输入一次">
+                        <input type="password"  name="password-repeat" class="form-control" id="repassword" placeholder="请再输入一次">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPassword1" class="col-lg-2 control-label">验证码</label>
                     <div class="col-lg-4">
-                        <input type="text" class="form-control" id="code" placeholder="验证码"><a href="#" onclick="getCode()">点击获取验证码</a>
+                        <input type="text" class="form-control" id="code" placeholder="点击自动填写" value="" ><a href="#" onclick="getCode()">点击获取验证码</a>
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <div class="col-lg-10 alert " id="regtip">
+
                     </div>
                 </div>
 
@@ -46,7 +52,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button"  class="btn btn-primary" onclick="doregister()">注册</button>
+                <button type="button"  class="btn btn-primary" onclick="doregister()" >注册</button>
 
             </div>
             </form>
