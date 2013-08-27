@@ -99,70 +99,62 @@ function getCode() {
 
 function doregister() {
 
+    var tip = $("#regtip");
     var success = function (msg) {
-
         if (msg.error) {
-            $("#regtip").html(msg.error);
-            $("#regtip").addClass("alert-danger");
+            tip.html(msg.error);
+            tip.addClass("alert-danger");
         }
-
         if (msg.success) {
-            $("#regtip").removeClass("alert-danger");
-            $("#regtip").addClass("alert-success");
-            $("#regtip").html(msg.success);
+            tip.removeClass("alert-danger");
+            tip.addClass("alert-success");
+            tip.html(msg.success);
             window.location.href = "/";
         }
 
     }
+    var niname = $("#niname").val();
 
-    var niname =  $("#niname").val();
-
-    if(niname.length>16||niname.length<2 ){
+    if (niname.length > 16 || niname.length < 2) {
         $("#niname").parent().parent().addClass("has-error");
-        $("#regtip").html("昵称输入不符合要求！");
-        $("#regtip").addClass("alert-danger")
+        tip.html("昵称输入不符合要求！");
+        tip.addClass("alert-danger");
         return;
     }
 
-
     var reerror = function (status) {
-        alert("service error");
+        alert("服务器发生错误");
     }
-
 
     var password = $("#password").val();
     var repassword = $("#repassword").val();
 
-    if(password.length>16||password.length<6){
+    if (password.length > 16 || password.length < 6) {
         $("#password").parent().parent().addClass("has-error");
-        $("#regtip").html("密码输入不合法！");
-        $("#regtip").addClass("alert-danger")
+        tip.html("密码输入不合法！");
+        tip.addClass("alert-danger")
         return;
     }
 
     if (password != repassword) {
         $("#repassword").parent().parent().addClass("has-error");
-        $("#regtip").html("重复密码输入错误");
-        $("#regtip").addClass("alert-danger")
+        tip.html("重复密码输入错误");
+        tip.addClass("alert-danger")
         return;
     }
 
     var email = $("#email").val();
-    var fe = testemail(email) ;
+    var fe = testemail(email);
     if (fe == false) {
         $("#email").parent().parent().addClass("has-error");
-        $("#regtip").html("email输入错误");
-        $("#regtip").addClass("alert-danger")
+        tip.html("email输入错误");
+        tip.addClass("alert-danger");
         return;
     }
-
     var data = {"niname": niname, "password": password, "password_re": repassword, "email": email, "code": $("#code").val()};
-
-
     ajaxPost("/reg", data, success, reerror);
 
 }
-
 
 
 function testemail(str) {
@@ -177,23 +169,33 @@ function testemail(str) {
 }
 
 
-function login(){
+function dologin() {
+    var login_tip = $("#logintip");
     $.ajax({
         cache: true,
         type: "POST",
-        url:"/login",
-        data:$('#login_form').serialize(),// 你的formid
+        url: "/login",
+        data: $('#login_form').serialize(),// 你的formid
         async: false,
-        error: function(request) {
+        error: function (request) {
             alert("Connection error");
         },
-        success: function(data) {
-            $("#commonLayout_appcreshi").parent().html(data);
+        success: function (data) {
+            //$("").parent().html(data);
+            if(data.error){
+                login_tip.html(data.error);
+                login_tip.addClass("alert-danger");
+            }
+            if(data.success){
+                login_tip.removeClass("alert-danger");
+                login_tip.html(data.success);
+                login_tip.addClass("alert-success");
+                window.location.href = "/";
+            }
         }
     });
 
 }
-
 
 
 function ajaxPost(url, data, success, error) {

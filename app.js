@@ -44,16 +44,7 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/u/:user', routes.user);
-app.post('/post', routes.post);
-app.get('/reg', routes.reg);
-app.post('/reg', routes.doreg);
-app.get('/login', routes.login);
-app.post('/login', routes.dologin);
-app.get('/logout', routes.logout);
-app.get('/uper', routes.uper);
-app.post('/getCode', routes.getCode);
+routes(app);
 
 
 http.createServer(app).listen(app.get('port'), function () {

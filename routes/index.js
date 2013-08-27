@@ -1,9 +1,10 @@
 /*
- * GET home page.
+ * GET home page, register,login ,logout
  */
 
 var crypto = require('crypto')
-    , User = require('../models/user.js')
+    , UserDao = require("../dao/user_dao")
+    , User = require("../models/user")
     , flash = require('connect-flash');
 
 
@@ -32,7 +33,10 @@ exports.index = function (req, res) {
 };
 
 exports.uper = function (req, res) {
-    res.render('uper', { title: '强化' });
+    res.render('uper', {
+        title: '强化',
+        user: req.session.user
+    });
 };
 
 exports.user = function (req, res) {
@@ -50,65 +54,57 @@ exports.doreg = function (req, res) {
         password = req.body.password,
         password_re = req.body['password_re'],
         code = req.body.code;
-    console.log("param:"+niname + password  + password_re + code );
+    console.log("param:" + niname + password + password_re + code);
 
-    if(code.toLowerCase() !=   req.session.verifycode)   {
-        res.send({"error":"验证码错误"});
+    if (code.toLowerCase() != req.session.verifycode) {
+        res.send({"error": "验证码错误"});
         return;
     }
 
     //检验用户两次输入的密码是否一致
     if (password_re != password) {
-       // req.flash('error', '两次输入的密码不一致!');
-        // return res.redirect('/reg');
-        // res.setHeader("status", "200");
-        res.send({"error":"两次输入的密码不一致!"});
-        return ;
+        // req.flash('error', '两次输入的密码不一致!');
+        res.send({"error": "两次输入的密码不一致!"});
+        return;
     }
     //生成密码的散列值
-    var md5 = crypto.createHash('md5'),
-        password = md5.update(req.body.password).digest('hex');
+    var md5 = crypto.createHash('md5');
+    var real_password = md5.update(req.body.password).digest('hex');
 
     var newUser = new User({
-        niname: req.body.niname,
-        password: password,
+        niname: niname,
+        password: real_password,
         email: req.body.email
     });
 
     console.log("检查用户");
 
 
-
     //检查用户名是否已经存在
-    User.getNiName(newUser.niname, function (err, user) {
+
+    UserDao.findUserByNiName(newUser.niname, function (err, user) {
         if (user) {
             err = '用户已存在!';
         }
         if (err) {
             res.send({'error': err});
             //return res.redirect('/reg');
-            return ;
+            return;
         }
 
         console.log("新增用户");
         //如果不存在则新增用户
     });
 
-    newUser.save(function (err) {
+    UserDao.addUnder(newUser, function (err) {
         if (err) {
-            // req.flash('error', err);
-            // return res.redirect('/reg');
-            res.send({"error":err}) ;
+            res.send({"error": err});
             return;
         }
-
         req.session.user = newUser;//用户信息存入session
-        //req.flash('success', '注册成功!');
-        res.send({"success":"注册成功！"});
-        // res.redirect('/');
+        res.send({"success": "注册成功！"});
     });
 };
-
 
 exports.login = function (req, res) {
 
@@ -118,29 +114,28 @@ exports.dologin = function (req, res) {
     //生成密码的散列值
     var md5 = crypto.createHash('md5'),
         password = md5.update(req.body.password).digest('hex');
+
     //检查用户是否存在
-    User.getEmail(req.body.email, function (err, user) {
+    UserDao.findUserByEmail(req.body.email, function (err, user) {
         if (!user) {
-            req.flash('error', '用户不存在!');
-            return res.redirect('/login');
+            res.send({"error": "用户不存在"});
+            return;
         }
         //检查密码是否一致
         if (user.password != password) {
-            req.flash('error', '密码错误!');
-            return res.redirect('/login');
+            res.send({"error": "密码错误"});
+            return;
         }
         //用户名密码都匹配后，将用户信息存入 session
         req.session.user = user;
-        req.flash('success', '登陆成功!');
-        res.redirect('/');
+        res.send({"success": "登录成功"});
+        //res.redirect('/');
     });
 };
 
 
 exports.logout = function (req, res) {
-    app.get('/logout', function (req, res) {
         req.session.user = null;
-        req.flash('success', '登出成功!');
+      //  req.flash('success', '登出成功!');
         res.redirect('/');
-    });
 };
