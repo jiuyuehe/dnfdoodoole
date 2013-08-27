@@ -78,8 +78,6 @@ function up() {
     if (ups == 0) {
 
     }
-
-
 }
 
 
@@ -88,7 +86,6 @@ function getCode() {
     var success = function (msg) {
         $("#code").val(msg.vcode);
     }
-
     var reerror = function (status) {
         alert(status);
     }

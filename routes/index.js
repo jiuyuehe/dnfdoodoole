@@ -23,7 +23,7 @@ exports.getCode = function (req, res) {
 };
 
 exports.index = function (req, res) {
-    res.render('index2', {
+    res.render('index', {
         title: 'doodoole',
         user: req.session.user,
         success: req.flash('success').toString(),
@@ -135,7 +135,7 @@ exports.dologin = function (req, res) {
 
 
 exports.logout = function (req, res) {
-        req.session.user = null;
-      //  req.flash('success', '登出成功!');
-        res.redirect('/');
+    req.session.user = null;
+    //  req.flash('success', '登出成功!');
+    res.redirect('/');
 };

@@ -1,0 +1,4 @@
+user 角色分类：
+    普通用户， com
+    二级管理员， sec_mgr
+    超级管理员 ，sup_mgr
