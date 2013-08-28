@@ -20,6 +20,7 @@ module.exports = function (app) {
     app.post('/admin_login', admin.admin_login);
     app.get('/admin_logout', admin.admin_logout);
     app.get('/admin/*',admin.checkRole);
+    app.get('/admin/main',admin.adminMain);
     app.get('/admin/userList', admin.userList);
     app.get('/admin/weaponList', admin.weaponList);
 

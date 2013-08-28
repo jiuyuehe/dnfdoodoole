@@ -23,11 +23,16 @@ exports.getCode = function (req, res) {
 };
 
 exports.index = function (req, res) {
+
+    var userName = null;
+    if(req.session.user) {
+        userName =  req.session.user.niname;
+    }
     res.render('index', {
         title: 'doodoole',
-        user: req.session.user,
-        success: req.flash('success').toString(),
-        error: req.flash('error').toString()
+        userName:  userName
+       // success: req.flash('success').toString(),
+       // error: req.flash('error').toString()
     });
 
 };

@@ -187,7 +187,8 @@ function dologin() {
                 login_tip.removeClass("alert-danger");
                 login_tip.html(data.success);
                 login_tip.addClass("alert-success");
-                window.location.href = "/";
+              //  window.location.href = "/";
+                window.location.reload();
             }
         }
     });
