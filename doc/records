@@ -1,4 +1,9 @@
 user 角色分类：
-    普通用户， com
-    二级管理员， sec_mgr
-    超级管理员 ，sup_mgr
+    普通用户: com
+    二级管理员: sec_mgr
+    超级管理员 :sup_mgr
+
+user 用户状态：
+    正常： ok
+    违规： forbidden
+    黑名单：black

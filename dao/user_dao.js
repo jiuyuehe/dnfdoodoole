@@ -51,10 +51,30 @@ exports.forAll = function (callback) {
         if (err) {
             callback(err, null);
         }
-
         callback(null, docs);
     });
 }
+
+
+exports.getByPage = function (name, pageIndex, pageSize, callback) {
+    console.log("start get by page = 5");
+
+    var index = pageIndex || 1;
+    var size = pageSize || 5;
+
+    var skip = (index-1)*size;
+
+    var query = User.find(name).sort('-registerTime').skip(skip).limit(size);
+
+    query.exec(function(error,results){
+         if(error){
+             callback(err, null);
+         }
+    });
+
+
+}
+
 
 exports.findUserByNiName = function (name, callback) {
     User.findOne({niname: name}, function (err, doc) {

@@ -1,0 +1,37 @@
+<div>
+    <table class="table table-striped">
+        <tr>
+            <th>序号</th>
+            <th>用户昵称</th>
+            <th>email</th>
+            <th>角色</th>
+            <th>注册时间</th>
+            <th>用户状态</th>
+            <th>可操作项</th>
+        </tr>
+
+        <% userList.forEach(function(user,index){ %>
+        <tr>
+            <td><%= ++index %></td>
+            <td><%= user.niname %></td>
+            <td><%= user.email %></td>
+            <td><%= user.role %></td>
+            <td><%= user.registerTime.minute %></td>
+            <td><%= user.status %></td>
+            <td><a href="#">冻结用户</a></td>
+        </tr>
+        <% }) %>
+    </table>
+    <hr>
+    <div class="pull-right">
+        <ul class="pagination">
+            <li class="disabled"><a href="#">«</a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">»</a></li>
+        </ul>
+    </div>
+</div>

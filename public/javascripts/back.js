@@ -1,6 +1,3 @@
-
-
-
 function backLogin() {
     var login_tip = $(".panel");
     $.ajax({

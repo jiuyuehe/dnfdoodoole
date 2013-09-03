@@ -2,47 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd34624d-85a5-4746-b020-d571c87baf5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/manager/back_header.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/manager/back_topLink.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/manager/comment_mgr.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/doodooleUtils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/manager/left_bar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/manager/user_mgr.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/manager/weapon_mgr.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/admin.js" afterPath="$PROJECT_DIR$/routes/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/manager/admin_login.ejs" afterPath="$PROJECT_DIR$/views/manager/admin_login.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/back.js" afterPath="$PROJECT_DIR$/public/javascripts/back.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.js" afterPath="$PROJECT_DIR$/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/topLink.ejs" afterPath="$PROJECT_DIR$/views/topLink.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/up.js" afterPath="$PROJECT_DIR$/public/javascripts/up.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js" afterPath="$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/records" afterPath="$PROJECT_DIR$/doc/records" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.js" afterPath="$PROJECT_DIR$/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.js" afterPath="$PROJECT_DIR$/models/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/user_dao.js" afterPath="$PROJECT_DIR$/dao/user_dao.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="H:\github\dnfdoodoole\views\manager\admin.ejs" afterPath="$PROJECT_DIR$/views/manager/admin_login.ejs" />
+      <change type="MOVED" beforePath="H:\github\dnfdoodoole\views\manager\Main.ejs" afterPath="$PROJECT_DIR$/views/manager/main.ejs" />
     </list>
     <ignored path="dnfdoodoole.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377649724619" ignored="false" />
+    <file path="/Dummy.txt" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378168787759" ignored="false" />
     <file path="/mongodb.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377247296592" ignored="false" />
     <file path="/app.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377583434865" ignored="false" />
     <file path="/topLink.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377672489504" ignored="false" />
     <file path="/package.json" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377568383874" ignored="false" />
-    <file path="/user.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377585486114" ignored="false" />
+    <file path="/user.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378189990709" ignored="false" />
     <file path="/registerModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377244398265" ignored="false" />
     <file path="/index.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377673649223" ignored="false" />
     <file path="/up.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377682052810" ignored="false" />
     <file path="/header.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377133754681" ignored="false" />
     <file path="/loginModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377245209769" ignored="false" />
     <file path="/userDao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377252384950" ignored="false" />
-    <file path="/user_dao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377566827045" ignored="false" />
+    <file path="/user_dao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378193733396" ignored="false" />
     <file path="/routes.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377672827568" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/app.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377583437493" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/routes.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377582290121" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/views/index.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377583069322" ignored="false" />
     <file path="/index.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377583069322" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/routes/admin.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377583953055" ignored="false" />
-    <file path="/admin.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377686313453" ignored="false" />
-    <file path="/records" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377585662150" ignored="false" />
+    <file path="/admin.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378174565092" ignored="false" />
+    <file path="/records" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378190056856" ignored="false" />
     <file path="/admin.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377672300006" ignored="false" />
     <file path="/back.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377682557410" ignored="false" />
     <file path="/back_header.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377671062197" ignored="false" />
     <file path="/Main.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377673128726" ignored="false" />
-    <file path="/admin_login.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377683143238" ignored="false" />
-    <file path="/main.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377684988898" ignored="false" />
+    <file path="/admin_login.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378173537042" ignored="false" />
+    <file path="/main.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378171490161" ignored="false" />
+    <file path="/dummy.xml" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377760451370" ignored="false" />
+    <file path="/left_bar.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378170258836" ignored="false" />
+    <file path="/user_mgr.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378191233379" ignored="false" />
+    <file path="/doodooleUtils.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378188941365" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,82 +71,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/admin.js">
+      <file leaf-file-name="user_mgr.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/manager/user_mgr.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="28" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0">
+            <state line="18" column="86" selection-start="524" selection-end="524" vertical-scroll-proportion="-7.586207">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="back.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/back.js">
+      <file leaf-file-name="user_dao.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dao/user_dao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="51" selection-start="789" selection-end="789" vertical-scroll-proportion="0.7092199">
+            <state line="71" column="11" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.7407407">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes.js">
+      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="37" selection-start="724" selection-end="733" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin1.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin1.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="585" selection-end="585" vertical-scroll-proportion="-11.724138">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="5.275862">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_login.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/manager/admin_login.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="39" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-15.862069">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="back_header.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/manager/back_header.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="31" selection-start="307" selection-end="307" vertical-scroll-proportion="-6.206897">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="back_topLink.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/manager/back_topLink.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-21.37931">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/manager/main.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="22" selection-start="124" selection-end="124" vertical-scroll-proportion="-6.206897">
+            <state line="24" column="16" selection-start="707" selection-end="719" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,28 +116,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/doc/records" />
-        <option value="$PROJECT_DIR$/models/user.js" />
-        <option value="$PROJECT_DIR$/views/admin1.ejs" />
-        <option value="$PROJECT_DIR$/views/manager/back_header.ejs" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/views/topLink.ejs" />
-        <option value="$PROJECT_DIR$/routes.js" />
-        <option value="$PROJECT_DIR$/views/manager/admin.ejs" />
-        <option value="$PROJECT_DIR$/views/manager/back_topLink.ejs" />
         <option value="$PROJECT_DIR$/views/manager/Main.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/javascripts/up.js" />
-        <option value="$PROJECT_DIR$/views/manager/admin_login.ejs" />
-        <option value="$PROJECT_DIR$/views/manager/main.ejs" />
-        <option value="$PROJECT_DIR$/routes/admin.js" />
         <option value="$PROJECT_DIR$/public/javascripts/back.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/manager/left_bar.ejs" />
+        <option value="$PROJECT_DIR$/views/manager/main.ejs" />
+        <option value="$PROJECT_DIR$/settings.js" />
+        <option value="$PROJECT_DIR$/views/manager/admin_login.ejs" />
+        <option value="$PROJECT_DIR$/routes/admin.js" />
+        <option value="$PROJECT_DIR$/utils/doodooleUtils.js" />
+        <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/doc/records" />
+        <option value="$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js" />
+        <option value="$PROJECT_DIR$/views/manager/user_mgr.ejs" />
+        <option value="$PROJECT_DIR$/dao/user_dao.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="344" />
-    <option name="y" value="75" />
+    <option name="x" value="328" />
+    <option name="y" value="85" />
     <option name="width" value="1553" />
     <option name="height" value="919" />
   </component>
@@ -272,6 +227,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dnfdoodoole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dnfdoodoole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -287,24 +256,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,6 +287,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dnfdoodoole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dnfdoodoole" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -347,9 +312,9 @@
     <property name="options.lastSelected" value="appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -402,15 +367,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="344" y="75" width="1553" height="919" extended-state="0" />
-    <editor active="false" />
+    <frame x="328" y="85" width="1553" height="919" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20026438" sideWeight="0.9986894" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16721745" sideWeight="0.9986894" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -486,114 +451,118 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+    <entry file="file://$PROJECT_DIR$/models/weapon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="746" selection-end="746" vertical-scroll-proportion="-11.724138">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/models/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="855" selection-end="855" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/topLink.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="48" selection-start="852" selection-end="860" vertical-scroll-proportion="-11.586206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="382" selection-end="386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="40" selection-start="4663" selection-end="4663" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="49" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin1.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="585" selection-end="585" vertical-scroll-proportion="-11.724138">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="5.275862">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/records">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="55" selection-end="62" vertical-scroll-proportion="0.08510638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/back_topLink.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-21.37931">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/back_header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="307" selection-end="307" vertical-scroll-proportion="-6.206897">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/admin_login.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="39" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-15.862069">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/main.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="124" selection-end="124" vertical-scroll-proportion="-6.206897">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="37" selection-start="724" selection-end="733" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/admin.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="28" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/back.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="51" selection-start="789" selection-end="789" vertical-scroll-proportion="0.7092199">
+        <state line="8" column="41" selection-start="195" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="94" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/connect-mongo/node_modules/mongodb/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/mongo_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/manager/user_mgr.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="86" selection-start="524" selection-end="524" vertical-scroll-proportion="-7.586207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="707" selection-end="719" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/user_dao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="11" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.7407407">
           <folding />
         </state>
       </provider>
