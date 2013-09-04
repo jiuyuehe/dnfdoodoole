@@ -179,15 +179,15 @@ function dologin() {
         },
         success: function (data) {
             //$("").parent().html(data);
-            if(data.error){
+            if (data.error) {
                 login_tip.html(data.error);
                 login_tip.addClass("alert-danger");
             }
-            if(data.success){
+            if (data.success) {
                 login_tip.removeClass("alert-danger");
                 login_tip.html(data.success);
                 login_tip.addClass("alert-success");
-              //  window.location.href = "/";
+                //  window.location.href = "/";
                 window.location.reload();
             }
         }
@@ -215,5 +215,4 @@ function ajaxPost(url, data, success, error) {
         //alert( "Request failed: " + textStatus );
         error();
     });
-
 }

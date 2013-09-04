@@ -1,0 +1,30 @@
+<%-  include back_header.ejs %>
+
+<body onload="load_weapon_list()">
+
+<%- include back_topLink.ejs %>
+
+<div class="container">
+
+    <%- include left_bar.ejs %>
+
+    <div class="well col-xs-9">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"> <%= title %></h3>
+            </div>
+            <div class="panel-body">
+                <form method="post" enctype="multipart/form-data" action="/upload">
+                    <input type="text" name="">
+                    <input type="password" name="password">
+                    <input type="file" name="thumbnail">
+                    <input type="submit">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<%- include ../footer.ejs %>

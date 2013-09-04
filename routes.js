@@ -23,6 +23,8 @@ module.exports = function (app) {
     app.get('/admin/main',admin.adminMain);
     app.get('/admin/userList', admin.userList);
     app.get('/admin/weaponList', admin.weaponList);
+    app.get('/admin/getUserPage',admin.getUserPage);
+    app.get("/admin/weapon_mgr",admin.weapon_mgr);
 
 }
 

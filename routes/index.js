@@ -38,9 +38,13 @@ exports.index = function (req, res) {
 };
 
 exports.uper = function (req, res) {
+    var userName = null;
+    if(req.session.user) {
+        userName =  req.session.user.niname;
+    }
     res.render('uper', {
         title: '强化',
-        user: req.session.user
+        userName: userName
     });
 };
 

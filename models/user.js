@@ -24,8 +24,6 @@ var userSchema = new Schema({
     role: { type: String, default: "com" },
     registerTime: {type: Object, default: time},
     status: {type: String, default: "ok"}
-
-
 });
 
 var User = mongoose.model('User', userSchema);

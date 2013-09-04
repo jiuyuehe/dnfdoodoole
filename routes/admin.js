@@ -1,5 +1,6 @@
 var crypto = require('crypto')
     , UserDao = require("../dao/user_dao")
+    , WeaponDao = require("../dao/weapon_dao")
     , User = require("../models/user")
     , flash = require('connect-flash');
 
@@ -35,8 +36,8 @@ exports.admin_login = function (req, res) {
 };
 
 exports.adminMain = function (req, res) {
-    UserDao.forAll(function (err, userList) {
-        if (!userList) {
+    UserDao.getByPage(null, 1, 5, function (error, pageCount, userList) {
+        if (error) {
             res.send({"error": "查询用户出现数据库系统错误！"});
             return;
         }
@@ -44,9 +45,24 @@ exports.adminMain = function (req, res) {
         res.render('manager/main', {
             title: '用户管理板块',
             userName: req.session.user.niname,
-            userList: userList
+            userList: userList,
+            pageCount: pageCount
         });
+
     });
+
+//    UserDao.forAll(function (err, userList) {
+//        if (!userList) {
+//            res.send({"error": "查询用户出现数据库系统错误！"});
+//            return;
+//        }
+//
+//        res.render('manager/main', {
+//            title: '用户管理板块',
+//            userName: req.session.user.niname,
+//            userList: userList
+//        });
+//    });
 
 };
 
@@ -68,6 +84,7 @@ exports.checkRole = function (req, res, next) {
         next();
     } else {
         res.redirect("/admin_mgr");
+
     }
 };
 
@@ -77,7 +94,78 @@ exports.userList = function (req, res) {
 };
 
 
+/**
+ * ajax 请求不刷新分页效果
+ * @param req
+ * @param res
+ */
+exports.getUserPage = function (req, res) {
+    var pageIndex = req.body.pageIndex;
+    var pageSize = req.body.pageSize;
+    /**
+     * 带搜索条件分页
+     */
+    if (req.body.niname) {
+        UserDao.getByPage(niname, pageIndex, pageSize, function (err, pageCount, users) {
+
+        });
+    } else {
+        /**
+         * 无搜索条件分页
+         */
+        UserDao.getByPage(null, pageIndex, pageSize, function (err, pageCount, users) {
+
+            if (err) {
+                res.send({"err": "系统错误！"});
+                return;
+            }
+            res.send({"pageCount": pageCount, "userList": users});
+        });
+    }
+};
+
+
+/**
+ * 进入武器管理模块
+ * @param req
+ * @param res
+ */
+exports.weapon_mgr = function (req, res) {
+    res.render('manager/weapon_mgr', {
+        title: '武器管理板块',
+        userName: req.session.user.niname
+    });
+};
+
+
+/**
+ * 分页获取武列表
+ * @param req
+ * @param res
+ */
 exports.weaponList = function (req, res) {
-    res.render('admin', { title: 'this is weaponList Express' });
+
+    var pageIndex = req.body.pageIndex;
+    var pageSize = req.body.pageSize;
+    /**
+     * 带搜索条件分页
+     */
+    if (req.body.name) {
+        WeaponDao.getByPage(name, pageIndex, pageSize, function (err, pageCount, weapons) {
+
+        });
+    } else {
+        /**
+         * 无搜索条件分页
+         */
+        WeaponDao.getByPage(null, pageIndex, pageSize, function (err, pageCount, weapons) {
+
+            if (err) {
+                res.send({"err": "系统错误！"});
+                return;
+            }
+            res.send({"pageCount": pageCount, "weaponList": weapons});
+        });
+    }
 };
 

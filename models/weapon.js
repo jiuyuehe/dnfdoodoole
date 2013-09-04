@@ -1,5 +1,23 @@
+var mongoose = require('./mongodb');
+var util = require('util');
+var Schema = mongoose.Schema;
+var time = require('./dateTime');
 
-function  weaper(name,icon,level) {
 
+/**
+ * 武器模型
+ * @type {Schema}
+ */
+var weaponSchema = new Schema({
+    name: { type: String, index: true, trim: true},
+    level: { type: String },
+    color: String,
+    pic: { type: String },
+    info: {type: String},
+    uploadTime: {type: Object, default: time},
+    uploader: {type: String}
+});
 
-}
+var Weapon = mongoose.model('Weapon', weaponSchema);
+
+module.exports = Weapon;

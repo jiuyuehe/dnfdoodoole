@@ -9,7 +9,6 @@
             <th>用户状态</th>
             <th>可操作项</th>
         </tr>
-
         <% userList.forEach(function(user,index){ %>
         <tr>
             <td><%= ++index %></td>
@@ -23,15 +22,21 @@
         <% }) %>
     </table>
     <hr>
-    <div class="pull-right">
+
+    <div class="pull-right" id="user_page">
         <ul class="pagination">
-            <li class="disabled"><a href="#">«</a></li>
-            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">»</a></li>
+            <li class="disabled"><a href="#">首页</a></li>
+            <li><a href="#">上一页</a></li>
+            <li><a href="#">下一页</a></li>
+            <li><a href="#">跳至
+                <select>
+                    <% for(var i=1;i < pageCount+1; i++ ){ %>
+                    <option value='<%= i %>'><%= i %></option>
+                    <% } %>
+                </select>
+            </a>
+            </li>
+            <li class="disabled"><a href="#">共<%= pageCount %>页</a></li>
         </ul>
     </div>
 </div>

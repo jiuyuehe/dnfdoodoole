@@ -64,15 +64,28 @@ exports.getByPage = function (name, pageIndex, pageSize, callback) {
 
     var skip = (index-1)*size;
 
-    var query = User.find(name).sort('-registerTime').skip(skip).limit(size);
+    var query ;
+
+    if(name){
+        query = User.find(name).sort('registerTime').skip(skip).limit(size);
+    }else{
+        query = User.find({}).sort('registerTime').skip(skip).limit(size);
+    }
 
     query.exec(function(error,results){
          if(error){
              callback(err, null);
+         } else {
+             User.count(name,function(error,count){
+                   if(error){
+                       callback(error,null);
+                   }else{
+                       var pageCount = Math.ceil(count/size);
+                       callback(null,pageCount,results);
+                   }
+             });
          }
     });
-
-
 }
 
 
