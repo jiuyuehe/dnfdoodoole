@@ -65,3 +65,13 @@ exports.getByPage = function (name, pageIndex, pageSize, callback) {
     });
 }
 
+/**
+ *
+ * @param playRole
+ * @param level
+ * @param color
+ */
+exports.findCondition = function(playRole,level,color){
+
+}
+

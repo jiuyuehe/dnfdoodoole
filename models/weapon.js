@@ -10,8 +10,9 @@ var time = require('./dateTime');
  */
 var weaponSchema = new Schema({
     name: { type: String, index: true, trim: true},
-    level: { type: String },
-    color: String,
+    level: { type: Number },
+    playRole:{type:Number},
+    color: {type:Number},
     pic: { type: String },
     info: {type: String},
     uploadTime: {type: Object, default: time},

@@ -2,6 +2,7 @@ var crypto = require('crypto')
     , UserDao = require("../dao/user_dao")
     , WeaponDao = require("../dao/weapon_dao")
     , User = require("../models/user")
+    , fs = require("fs")
     , flash = require('connect-flash');
 
 exports.toadmin = function (req, res) {
@@ -168,4 +169,41 @@ exports.weaponList = function (req, res) {
         });
     }
 };
+
+
+/***
+ * 添加weapon页面
+ * @param req
+ * @param res
+ */
+exports.toAddWeapon = function (req, res) {
+
+    res.render('manager/weapon_add', {
+        title: '武器管理板块>添加武器',
+        userName: req.session.user.niname
+    });
+
+}
+
+/**
+ * add weapon
+ * @param req
+ * @param res
+ */
+exports.addWeapon = function (req, res) {
+
+
+    req.form.on('progress', function (bytesReceived, bytesExpected) {
+
+        console.log(((bytesReceived / bytesExpected) * 100) + "% uploaded");
+    });
+
+    req.form.on('end', function () {
+        console.log(req.files);
+
+        fs.renameSync(files.upload.path, "/public/images/pics"+files.upload.name);
+        res.send("done");
+    });
+
+}
 

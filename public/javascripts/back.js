@@ -12,7 +12,6 @@ function backLogin() {
         success: function (data) {
             //$("").parent().html(data);
             if (data.error) {
-                alert(data.error)
                 login_tip.html(data.error);
                 login_tip.addClass("alert-danger");
             }
@@ -45,14 +44,14 @@ PageClick = function (pageIndex) {
             });
         }
 
-        alert(html)
+        alert("insert html"+html)
 
         $(table).innerHTML = html;
 
     };
 
     var error = function (msg) {
-        alert(msg.error);
+        alert("错误呀！"+msg.error);
     }
 
 

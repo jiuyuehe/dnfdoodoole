@@ -1,6 +1,6 @@
 <%-  include back_header.ejs %>
 
-<body onload="load_weapon_list()">
+<body>
 
 <%- include back_topLink.ejs %>
 
@@ -14,11 +14,59 @@
                 <h3 class="panel-title"> <%= title %></h3>
             </div>
             <div class="panel-body">
-                <form method="post" enctype="multipart/form-data" action="/upload">
-                    <input type="text" name="">
-                    <input type="password" name="password">
-                    <input type="file" name="thumbnail">
-                    <input type="submit">
+
+                <form role="form" enctype="multipart/form-data" method="post" action="/admin/addWeapon">
+
+                    <div class="form-group ">
+                        <label for="name">weapon name </label>
+                        <input type="text" class="form-control" name ="weaponName"  id="name" placeholder="weapon name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" name="pic" id="exampleInputFile">
+                        <p class="help-block form-inline">请上传xx * xx 图片</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="info">info</label>
+                        <input type="text" class="form-control" name="info" id="info" placeholder="info">
+                    </div>
+                    <hr>
+                    <div class="form-inline">
+                        角色 ：
+                        <select class="form-inline input-sm">
+                            <option value="1">鬼剑士</option>
+                            <option value="2">格斗家</option>
+                            <option value="3">魔法师</option>
+                        </select>
+                        种类 ：
+                        <select class="form-inline input-sm">
+                            <option value="1">武器</option>
+                            <option value="2">防具</option>
+                            <option value="3">首饰</option>
+                            <option value="4">辅助装备</option>
+                        </select>
+                        品级 ：
+                        <select class="form-inline input-sm">
+                            <option style="color:#ffff00" value="1">史诗</option>
+                            <option style="color:mediumvioletred" value="2">粉色</option>
+                            <option style="color:mediumvioletred" value="3">领主粉</option>
+                            <option style="color:brown" value="4">异界</option>
+                            <option style="color:purple" value="5">紫色</option>
+                            <option style="color:deepskyblue" value="6">蓝色</option>
+                        </select>
+                        等级 ：
+                        <select class="form-inline input-sm">
+                            <option value="1">80</option>
+                            <option value="2">70</option>
+                            <option value="3">65</option>
+                            <option value="4">60</option>
+                            <option value="5">55</option>
+                            <option value="6">50</option>
+                            <option value="7">40</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-primary">提交</button>
                 </form>
 
             </div>
