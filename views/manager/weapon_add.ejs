@@ -15,7 +15,7 @@
             </div>
             <div class="panel-body">
 
-                <form role="form" enctype="multipart/form-data" method="post" action="/admin/addWeapon">
+                <form role="form" id="weapon_form" enctype="multipart/form-data" method="post" action="/admin/addWeapon">
 
                     <div class="form-group ">
                         <label for="name">weapon name </label>
@@ -33,20 +33,20 @@
                     <hr>
                     <div class="form-inline">
                         角色 ：
-                        <select class="form-inline input-sm">
+                        <select class="form-inline input-sm" name="playRole">
                             <option value="1">鬼剑士</option>
                             <option value="2">格斗家</option>
                             <option value="3">魔法师</option>
                         </select>
                         种类 ：
-                        <select class="form-inline input-sm">
+                        <select class="form-inline input-sm" name="weaponType">
                             <option value="1">武器</option>
                             <option value="2">防具</option>
                             <option value="3">首饰</option>
                             <option value="4">辅助装备</option>
                         </select>
                         品级 ：
-                        <select class="form-inline input-sm">
+                        <select class="form-inline input-sm" name ="color">
                             <option style="color:#ffff00" value="1">史诗</option>
                             <option style="color:mediumvioletred" value="2">粉色</option>
                             <option style="color:mediumvioletred" value="3">领主粉</option>
@@ -55,7 +55,7 @@
                             <option style="color:deepskyblue" value="6">蓝色</option>
                         </select>
                         等级 ：
-                        <select class="form-inline input-sm">
+                        <select class="form-inline input-sm" name = "level">
                             <option value="1">80</option>
                             <option value="2">70</option>
                             <option value="3">65</option>
@@ -67,6 +67,7 @@
                     </div>
                     <hr>
                     <button type="submit" class="btn btn-primary">提交</button>
+                    <!--<button  class="btn btn-primary" onclick="addWeapons()">提交</button>-->
                 </form>
 
             </div>

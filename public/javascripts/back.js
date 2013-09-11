@@ -25,6 +25,31 @@ function backLogin() {
     });
 }
 
+function addWeapons() {
+    $.ajax({
+        cache: true,
+        type: "POST",
+        url: "/admin/addWeapon",
+        data: $('#weapon_form').serialize(),// 你的formid
+        async: false,
+        error: function (request) {
+            alert("Connection error");
+        },
+        success: function (data) {
+            if (data.error) {
+                alert(data.error);
+            }
+            if (data.success) {
+                alert(data.success);
+                window.location.href = "/admin/toAddWeapon";
+            }
+        }
+    });
+}
+
+
+
+
 function load_weapon_list() {
     PageClick(1);
 
