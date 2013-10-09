@@ -27,57 +27,170 @@ function showWeaps() {
     $(".list-inline").html(l);
 }
 
-
+// choose weapons to up;
 function choose() {
+    var show = $("#show");
+
+    show.empty();
+
     var ico = $("img")[1].src;
 
+    var img = "<img class='img-circle  px-64' src=\"" + ico + "\">";
 
-    var img = "<img class='px-64' src=\"" + ico + "\">";
-
-
-    $("#show").append(img);
+    show.append(img);
 
 }
 
-
+// the up
+var upLevel = 0;
 function up() {
-    /*  var data =[1,2,3,4,5,6];
 
-     var sum = 0;
-     data.forEach(function(value){ sum +=value});
-
-     alert(sum);
-
-     data.forEach(function(v,i,a){a[i] = v+1});
-
-     alert(data);*/
-
-//    a = [1,2,3,5,7,9,12];
-//    b = a.map(function(x){return x*x;});
-//    alert(b)
-//
-//    var  sun = a.reduce(function(x,y){return x+y},0);
-//         alert(sun);
-//    var product = a.reduce(function(x,y){return x*y},1);
-//         alert(product);
-
-
-//    small = a.filter(function(x){return x<7;});
-//    console.log(small);
-//
-//    big = a.filter(function(x,i){return i%2==0;});
-//    console.log(big);
-
-    // alert(Math.random());
-
-    var ups = 0;
-
-    vNum = Math.random();
-    vNum = Math.round(vNum * 10);
-
-    if (ups == 0) {
-
+    alert(upLevel);
+    switch (upLevel)
+    {
+        case 0:
+            upLevel++;
+            break;
+        case 1:
+            upLevel++;
+            break;
+        case 2:
+            upLevel++;
+            break;
+        case 3:
+            upLevel++;
+            break;
+        case 4:
+            var roll = rollNum();
+            if(roll % 10 == 0){
+                upLevel--;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 5:
+            var roll = rollNum();
+            if(roll % 10 == 0){
+                upLevel--;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 6:
+            var roll = rollNum();
+            if(roll % 8 == 0){
+                upLevel--;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 7:
+            var roll = rollNum();
+            if(roll % 5 == 0){
+                upLevel= upLevel-3;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 8:
+            var roll = rollNum();
+            if(roll % 4 == 0){
+                upLevel= upLevel-3;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 9:
+            var roll = rollNum();
+            if(roll % 3 == 0){
+                upLevel= upLevel-3;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 10:
+            var roll = rollNum();
+            if(roll % 2 == 0){
+                upLevel= upLevel-3;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 11:
+            var roll = rollNum();
+            if(roll < 80){
+                upLevel = 0;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 12:
+            var roll = rollNum();
+            if(roll < 75){
+                upLevel = 0;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 13:
+            var roll = rollNum();
+            if(roll % 3 == 0){
+                upLevel--;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 14:
+            var roll = rollNum();
+            if(roll % 3 == 0){
+                upLevel--;
+            }else{
+                upLevel++;
+            }
+            break;
+        case 15:
+            x="Today it's Saturday";
+            break;
+        case 16:
+            x="Today it's Saturday";
+            break;
+        case 17:
+            x="Today it's Saturday";
+            break;
     }
+
+
+//    if (upLevel <= 3) {
+//        upLevel++;
+//        alert(" 强化到： "+upLevel)
+//    } else if (upLevel>3 && upLevel <= 7) {
+//        var roll = rollNum();
+//        alert(roll % 3) ;
+//        if (roll % 3 == 0) {
+//            upLevel--;
+//            alert(" 强化到： "+upLevel)
+//        } else {
+//            upLevel++;
+//            alert(" 强化到： "+upLevel)
+//        }
+//    } else if(upLevel == 8){
+//        var roll = rollNum();
+//        alert(roll % 3) ;
+//        if (roll % 2 == 0) {
+//            upLevel--;
+//            alert(" 强化到： "+upLevel)
+//        } else {
+//            upLevel++;
+//            alert(" 强化到： "+upLevel)
+//        }
+//    }
+}
+
+function rollNum() {
+    var vNum = Math.random();
+    vNum = Math.round(vNum * 100);
+
+    return vNum;
 }
 
 

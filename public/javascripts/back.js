@@ -64,8 +64,10 @@ PageClick = function (pageIndex) {
         var pageCount = msg.pageCount;
 
         if (msg.weaponList.length > 0) {
-            msg.weaponList.forEach(function (weapon) {
-                html += '<tr><td>1</td><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>';
+            alert(msg.weaponList);
+            msg.weaponList.forEach(function (weapon,index) {
+                html += "<tr><td>"+index+"</td><td>"+weapon.name+"</td><td>"+weapon.pic+"</td><td>"+weapon.level
+                    +"</td><td>"+weapon.playRole+"</td><td>"+weapon.color+"</td><td>删除</td></tr>";
             });
         }
 

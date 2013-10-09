@@ -181,7 +181,9 @@ exports.toAddWeapon = function (req, res) {
 
     res.render('manager/weapon_add', {
         title: '武器管理板块>添加武器',
-        userName: req.session.user.niname
+        userName: req.session.user.niname,
+        success: req.flash('success').toString(),
+        error: req.flash('error').toString()
     });
 
 }
@@ -216,10 +218,12 @@ exports.addWeapon = function (req, res) {
         return res.redirect('/admin/toAddWeapon');
     }
 
-    if (!req.files) {
+    console.log(req.files);
+
+    if (!(req.files)) {
         console.log("pic err");
         req.flash('error', '必须上传文件');
-        return res.redirect('/admin/toAddWeapon');
+        return res.redirect('/');
     }
 
     var newName;

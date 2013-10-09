@@ -13,9 +13,15 @@
             <div class="panel-heading">
                 <h3 class="panel-title"> <%= title %></h3>
             </div>
+            <% if (success) { %>
+            <div><%= success %></div>
+            <% } %>
+            <% if (error) { %>
+            <div><%= error %> </div>
+            <% } %>
             <div class="panel-body">
 
-                <form role="form" id="weapon_form" enctype="multipart/form-data" method="post" action="/admin/addWeapon">
+                <form role="form" id="weapon_form" enctype="multipart/form-data" >
 
                     <div class="form-group ">
                         <label for="name">weapon name </label>
@@ -66,8 +72,8 @@
                         </select>
                     </div>
                     <hr>
-                    <button type="submit" class="btn btn-primary">提交</button>
-                    <!--<button  class="btn btn-primary" onclick="addWeapons()">提交</button>-->
+                    <!--<button type="submit" class="btn btn-primary">提交</button>-->
+                    <button  class="btn btn-primary" onclick="addWeapons()">提交</button>
                 </form>
 
             </div>

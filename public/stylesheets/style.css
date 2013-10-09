@@ -8,9 +8,10 @@ a {
 }
 
 .center {margin-right:auto;margin-left:auto;text-align:center;vertical-align:middle;}
-.center1 {margin-top: 35%;margin-left:25%;text-align:center;vertical-align:middle; border: 1px solid #808080;}
+.center-boder {margin-right:auto;margin-left:auto;text-align:center;vertical-align:middle;border: 1px solid #808080;}
 .weap-list{ margin: 10px 5px 10px 0px;}
 .px-28{width:28px;height:28px;}
 .px-64{width:64px;height:64px;}
 .top10{margin-top: 10px;}
+.weap-up{border-left:1px solid #808080;}
 

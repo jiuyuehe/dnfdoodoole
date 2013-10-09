@@ -14,28 +14,31 @@
                 <h3 class="panel-title"> <%= title %></h3>
             </div>
             <div class="panel-body">
-                <div class="pull-left">
-                    <a href="/admin/toAddWeapon" class="btn btn-primary">增加武器</a>
-                </div>
+                <div class=" well-sm">
+                    <div class="pull-left">
+                        <a href="/admin/toAddWeapon" class="btn btn-primary">增加武器</a>
+                    </div>
 
-                <div class="pull-right col-xs-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
+                    <div class="pull-right col-xs-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
                               <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">Go!</button>
                               </span>
+                        </div>
+                        <!-- /input-group -->
                     </div>
-                    <!-- /input-group -->
                 </div>
                 <!-- /.col-lg-6 -->
                 <div>
                     <table class="table table-striped">
                         <tr>
                             <th>序号</th>
-                            <th>用户昵称</th>
-                            <th>email</th>
+                            <th>武器名称</th>
+                            <th>图片</th>
+                            <th>等级</th>
                             <th>角色</th>
-                            <th>注册时间</th>
+                            <th>颜色</th>
                             <th>用户状态</th>
                             <th>可操作项</th>
                         </tr>
