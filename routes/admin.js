@@ -203,12 +203,6 @@ exports.addWeapon = function (req, res) {
     var weaponType = req.body.weaponType;
 
 
-//    if (weaponName.trim() === " ") {
-//        console.log("~~~~~~~~~~" + weaponName + new Date().getTime());
-//        req.flash('error', '名字不能>20,也不能为空!');
-//        return res.redirect('/admin/toAddWeapon');
-//    }
-
     console.log(weaponName + "-" + info + "-" + playRole + "-" + weaponType);
 
     if (weaponName && weaponName.length > 20) {
