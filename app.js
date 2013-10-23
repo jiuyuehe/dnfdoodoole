@@ -22,9 +22,7 @@ app.use(express.logger('dev'));
 //app.use(express.bodyParser());
 app.use(express.bodyParser({
     uploadDir:"public/images/upload",
-    keepExtensions : true,
-    limit:100000000,
-    defer:true
+    limit:100000000
 }));
 
 app.use(express.methodOverride());

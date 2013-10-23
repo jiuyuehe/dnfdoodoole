@@ -21,7 +21,7 @@
             <% } %>
             <div class="panel-body">
 
-                <form role="form" id="weapon_form" enctype="multipart/form-data" >
+                <form  id="weapon_form" enctype="multipart/form-data" action="/admin/addWeapon" method="POST" >
 
                     <div class="form-group ">
                         <label for="name">weapon name </label>
@@ -40,40 +40,46 @@
                     <div class="form-inline">
                         角色 ：
                         <select class="form-inline input-sm" name="playRole">
-                            <option value="1">鬼剑士</option>
-                            <option value="2">格斗家</option>
-                            <option value="3">魔法师</option>
+                            <option value="0">鬼剑士</option>
+                            <option value="1">格斗家</option>
+                            <option value="2">魔法师</option>
+                            <option value="3">圣骑士</option>
+                            <option value="4">神枪手</option>
+                            <option value="5">刺客</option>
                         </select>
                         种类 ：
                         <select class="form-inline input-sm" name="weaponType">
-                            <option value="1">武器</option>
-                            <option value="2">防具</option>
-                            <option value="3">首饰</option>
-                            <option value="4">辅助装备</option>
+                            <option value="0">武器</option>
+                            <option value="1">防具</option>
+                            <option value="2">首饰</option>
+                            <option value="3">辅助装备</option>
                         </select>
                         品级 ：
                         <select class="form-inline input-sm" name ="color">
-                            <option style="color:#ffff00" value="1">史诗</option>
-                            <option style="color:mediumvioletred" value="2">粉色</option>
-                            <option style="color:mediumvioletred" value="3">领主粉</option>
-                            <option style="color:brown" value="4">异界</option>
-                            <option style="color:purple" value="5">紫色</option>
-                            <option style="color:deepskyblue" value="6">蓝色</option>
+                            <option  value="0">史诗</option>
+                            <option  value="1">粉色</option>
+                            <option  value="2">领主粉</option>
+                            <option  value="3">异界</option>
+                            <option  value="4">紫色</option>
+                            <option  value="5">蓝色</option>
+                            <option  value="6">白色</option>
                         </select>
                         等级 ：
                         <select class="form-inline input-sm" name = "level">
-                            <option value="1">80</option>
-                            <option value="2">70</option>
-                            <option value="3">65</option>
-                            <option value="4">60</option>
-                            <option value="5">55</option>
-                            <option value="6">50</option>
-                            <option value="7">40</option>
+                            <option value="85">85</option>
+                            <option value="80">80</option>
+                            <option value="75">75</option>
+                            <option value="70">70</option>
+                            <option value="65">65</option>
+                            <option value="60">60</option>
+                            <option value="55">55</option>
+                            <option value="50">50</option>
+                            <option value="1">1</option>
                         </select>
                     </div>
                     <hr>
-                    <!--<button type="submit" class="btn btn-primary">提交</button>-->
-                    <button  class="btn btn-primary" onclick="addWeapons()">提交</button>
+                    <button type="submit" class="btn btn-primary">提交</button>
+                    <!--<button  class="btn btn-primary" onclick="addWeapons()">提交</button>-->
                 </form>
 
             </div>

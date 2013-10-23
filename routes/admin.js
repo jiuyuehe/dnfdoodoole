@@ -4,6 +4,7 @@ var crypto = require('crypto')
     , User = require("../models/user")
     , Weapon = require("../models/weapon")
     , fs = require("fs")
+    , util = require('util')
     , flash = require('connect-flash');
 
 exports.toadmin = function (req, res) {
@@ -195,78 +196,75 @@ exports.toAddWeapon = function (req, res) {
  */
 exports.addWeapon = function (req, res) {
 
-    var weaponName = req.body.weaponName;
-    var info = req.body.info;
-    var playRole = req.body.playRole;
-    var color = req.body.color;
-    var level = req.body.level;
-    var weaponType = req.body.weaponType;
+    var weaponName = req.body['weaponName'];
+    var info = req.body['info'];
+    var playRole = req.body['playRole'];
+    var color = req.body['color'];
+    var level = req.body['level'];
+    var weaponType = req.body['weaponType'];
+    var times = new Date();
+    console.log(times + weaponName + "-" + info + "-" + playRole + "-" + weaponType);
 
+    console.log("body:" + req.body['weaponName'].length);
+    console.log("body to name:" + weaponName.trim().length);
 
-    console.log(weaponName + "-" + info + "-" + playRole + "-" + weaponType);
-
-    if (weaponName && weaponName.length > 20) {
-
-        console.log("weapon err");
-        req.flash('error', '名字不能>20,也不能为空!');
+    if (weaponName.trim().length == 0) {
+        req.flash('error', '请填写名称');
         return res.redirect('/admin/toAddWeapon');
     }
 
-    console.log(req.files);
+    if (info.trim().length == 0) {
+        req.flash('error', '填写明细');
+        return res.redirect('/admin/toAddWeapon');
+    }
 
-    if (!(req.files)) {
+
+    if (req.files.pic.size == 0) {
         console.log("pic err");
         req.flash('error', '必须上传文件');
-        return res.redirect('/');
+        return res.redirect('/admin/toAddWeapon');
     }
 
-    var newName;
 
-    console.log("确认可以上传！@！！");
+    var picName = req.files.pic.name;
 
-    if (req.files) {
+    var newName = playRole + "" + weaponType + "" + level + new Date().getTime() + "." + picName.split(".")[1];
 
-        req.form.on('progress', function (bytesReceived, bytesExpected) {
-            console.log(((bytesReceived / bytesExpected) * 100) + "% uploaded");
+    console.log(newName);
+
+    fs.rename(req.files.pic.path, "./public/images/pics/" + newName, function (err) {
+        if (err) throw err;
+        fs.unlink(req.files.pic.path, function () {
+            if (err) throw err;
+//                    res.send('File uploaded to: ' + target_path + ' - ' + req.files.thumbnail.size + ' bytes');
         });
+    });
 
-        req.form.on('end', function () {
-            console.log(req.files);
 
-            var picName = req.files.pic.name;
+    console.log('success', '文件上传成功，新文件名：' + newName);
+//    req.flash('success', '文件上传成功，新文件名：'+newName);
+//    return res.redirect('/admin/toAddWeapon');
 
-            newName = playRole + "" + weaponType + "" + level + new Date().getTime() + "." + picName.split(".")[1];
-
-            console.log(newName);
-
-            fs.rename(req.files.pic.path, "./public/images/pics/" + newName, function (err) {
-                if (err) throw err;
-                fs.unlink(req.files.pic.path, function () {
-                    if (err) throw err;
-                    //res.send('File uploaded to: ' + target_path + ' - ' + req.files.thumbnail.size + ' bytes');
-                });
-            });
-        });
-    }
 
     var newWeapon = new Weapon({
-        weaponName: weaponName,
+        name: weaponName,
         info: info,
         playRole: playRole,
         color: color,
         level: level,
         pic: newName,
-        weaponType: weaponType
+        type: weaponType,
+        uploader: req.session.user.niname
     });
 
-    WeaponDao.addUnder(newWeapon, function(err) {
+    WeaponDao.addUnder(newWeapon, function (err) {
         if (err) {
             req.flash('error', '保存数据错误！');
             return res.redirect('/admin/toAddWeapon');
         }
     });
 
-    req.flash('success', '添加成功！');
+    req.flash('success', '文件上传成功，新文件名：' + newName);
     return res.redirect('/admin/toAddWeapon');
 
 }

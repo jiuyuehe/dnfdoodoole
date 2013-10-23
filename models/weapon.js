@@ -14,6 +14,7 @@ var weaponSchema = new Schema({
     playRole:{type:Number},
     color: {type:Number},
     pic: { type: String },
+    type: { type: Number },
     info: {type: String},
     uploadTime: {type: Object, default: time},
     uploader: {type: String}

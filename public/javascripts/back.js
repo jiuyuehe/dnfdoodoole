@@ -1,3 +1,10 @@
+var allRole = ["鬼剑士", "格斗家", "魔法师", "圣骑士", "神枪手", "刺客"];
+var weaponColor = ["史诗", '粉色', '领主粉', '异界', '紫色', '蓝色', '白色'];
+var allType = ['武器', '防具', '首饰', '特殊装备'];
+
+/***
+ * 后台登录
+ */
 function backLogin() {
     var login_tip = $(".panel");
     $.ajax({
@@ -25,6 +32,9 @@ function backLogin() {
     });
 }
 
+/***
+ * 添加武器
+ */
 function addWeapons() {
     $.ajax({
         cache: true,
@@ -47,40 +57,50 @@ function addWeapons() {
     });
 }
 
-
-
-
+/**
+ * 加载武器界面
+ * @type {number}
+ */
+var indexPage = 1;
 function load_weapon_list() {
-    PageClick(1);
+    if(indexPage == 1){
+
+        $('ul').children('li').removeClass("disabled");
+    }
+    PageClick(indexPage);
+
 
 }
 
 PageClick = function (pageIndex) {
 
-    var success = function (msg) {
+    success = function (msg) {
 
         var html = "";
 
         var pageCount = msg.pageCount;
 
         if (msg.weaponList.length > 0) {
-            alert(msg.weaponList);
-            msg.weaponList.forEach(function (weapon,index) {
-                html += "<tr><td>"+index+"</td><td>"+weapon.name+"</td><td>"+weapon.pic+"</td><td>"+weapon.level
-                    +"</td><td>"+weapon.playRole+"</td><td>"+weapon.color+"</td><td>删除</td></tr>";
+            msg.weaponList.forEach(function (weapon, index) {
+
+                var num = ++index;
+
+                html += "<tr><td>" + num + "</td><td>" + weapon.name + "</td><td>" +
+                    "<img class='img-circle  px-64' src=\"../images/pics/" + weapon.pic + "\">" + "</td><td>" + weapon.level
+                    + "</td><td>" + allRole[weapon.playRole] + "</td><td>" + weaponColor[weapon.color] + "</td><td>" +
+                    allType[weapon.type] + "</td><td>" +
+                    weapon.uploader + "</td><td>删除</td></tr>";
             });
         }
 
-        alert("insert html"+html)
+        $("table").append(html);
 
-        $(table).innerHTML = html;
 
     };
 
-    var error = function (msg) {
-        alert("错误呀！"+msg.error);
+    error = function (msg) {
+        alert("错误呀！" + msg.error);
     }
-
 
     var data = {"pageIndex": pageIndex, "pageSize": 5};
 
