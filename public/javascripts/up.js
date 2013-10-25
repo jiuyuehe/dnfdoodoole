@@ -28,16 +28,58 @@ var weaps = [
 ];
 
 
-function showWeaps() {
-    var list = " <li class='li-32'><img src='/images/2.ico' class='img-rounded  px-28' alt='asdf' onclick='choose()'/></li>";
-    var l = [];
+var weapList = [];
 
-    for (var i = 0; i < weaps.length; i++) {
-        //  $(".list-inline").html(list);
-        l += list;
+/***
+ * 展示
+ */
+function showWeaps() {
+
+    var url = "/uplist";
+    var data = "";
+
+    ajaxPost(url, data,success,error) ;
+
+
+
+    function success (msg){
+        weapList =msg;
+        alert(weapList);
+
+//        var list = " <li class='li-32'><img src='/images/2.ico' class='img-rounded  px-28' alt='asdf' onclick='choose()'/></li>";
+//        var l = [];
+//
+//        for (var i = 0; i < weaps.length; i++) {
+//            //  $(".list-inline").html(list);
+//            l += list;
+//        }
+//        $(".list-inline").html(l);
+
     }
-    $(".list-inline").html(l);
+
+
+
 }
+
+function ajaxPost(url, data,success,error) {
+
+    var res = $.ajax({
+        type: "GET",
+        url: url,
+        data: data
+    });
+
+    res.done(function (msg) {
+        success(msg);
+
+    });
+
+    res.fail(function (jqXHR, textStatus) {
+        error();
+    });
+}
+
+
 
 // choose weapons to up;
 function choose() {

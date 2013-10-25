@@ -142,19 +142,50 @@ exports.weapon_mgr = function (req, res) {
 
 
 /**
+ * 获取列表
+ * @param req
+ * @param res
+ */
+exports.uperList = function (req, res) {
+
+    var playRole = req.query['playRole'];
+    var level = req.query['level'];
+    var color = req.query['color'];
+
+    WeaponDao.findCondition(playRole, level, color, function (error, weapons) {
+        if (error) {
+            res.send({"err": "系统错误！"});
+            return;
+        }
+        res.send({ "weaponList": weapons});
+
+    });
+
+}
+
+
+/**
  * 分页获取武列表
  * @param req
  * @param res
  */
 exports.weaponList = function (req, res) {
 
-    var pageIndex = req.body.pageIndex;
-    var pageSize = req.body.pageSize;
+    console.log(req);
+
+    var pageIndex = req.query['pageIndex'];
+    var pageSize = req.query['pageSize'];
+
     /**
      * 带搜索条件分页
      */
-    if (req.body.name) {
+    if (req.query['name']) {
         WeaponDao.getByPage(name, pageIndex, pageSize, function (err, pageCount, weapons) {
+            if (err) {
+                res.send({"err": "系统错误！"});
+                return;
+            }
+            res.send({"pageCount": pageCount, "weaponList": weapons});
 
         });
     } else {
@@ -167,6 +198,8 @@ exports.weaponList = function (req, res) {
                 res.send({"err": "系统错误！"});
                 return;
             }
+
+//            console.log("pageCount :"+ pageCount + "weaponList :"+weapons);
             res.send({"pageCount": pageCount, "weaponList": weapons});
         });
     }

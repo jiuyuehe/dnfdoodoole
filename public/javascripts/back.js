@@ -58,27 +58,39 @@ function addWeapons() {
 }
 
 /**
- * 加载武器界面
+ * 加载分页界面
  * @type {number}
  */
 var indexPage = 1;
-function load_weapon_list() {
-    if(indexPage == 1){
+var pageCount = 0;
 
-        $('ul').children('li').removeClass("disabled");
-    }
+function load_weapon_list() {
     PageClick(indexPage);
 
+}
+/**
+ * 前一页
+ */
+function prefixPage() {
+    indexPage--;
+    PageClick(indexPage);
+
+
+}
+/**
+ * 后一页
+ */
+function nextPage() {
+    indexPage++;
+    PageClick(indexPage);
 
 }
 
 PageClick = function (pageIndex) {
 
     success = function (msg) {
-
         var html = "";
-
-        var pageCount = msg.pageCount;
+        pageCount = msg.pageCount;
 
         if (msg.weaponList.length > 0) {
             msg.weaponList.forEach(function (weapon, index) {
@@ -92,21 +104,38 @@ PageClick = function (pageIndex) {
                     weapon.uploader + "</td><td>删除</td></tr>";
             });
         }
-
+        $("tr").not(".th").remove();
         $("table").append(html);
-
+        var lis = $('ul.pagination').children('li');
+        if (indexPage == 1) {
+            lis.eq(1).addClass("disabled");
+            lis.last().children("a").empty();
+            lis.last().children("a").append("共" + pageCount + "页");
+            if (indexPage == pageCount) {
+                lis.eq(2).addClass("disabled");
+            }else{
+                lis.eq(2).removeClass("disabled");
+            }
+        } else {
+            lis.eq(0).removeClass("disabled");
+            lis.eq(1).removeClass("disabled");
+            if (indexPage == pageCount) {
+                lis.eq(2).addClass("disabled");
+            }
+        }
 
     };
 
     error = function (msg) {
         alert("错误呀！" + msg.error);
     }
-
     var data = {"pageIndex": pageIndex, "pageSize": 5};
+
 
     var url = "/admin/weaponList";
 
     ajaxPost(url, data, success, error);
+
 
 }
 
@@ -121,6 +150,7 @@ function ajaxPost(url, data, success, error) {
 
     res.done(function (msg) {
         success(msg);
+
     });
 
     res.fail(function (jqXHR, textStatus) {

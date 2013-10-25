@@ -39,26 +39,26 @@ exports.getByPage = function (name, pageIndex, pageSize, callback) {
     var index = pageIndex || 1;
     var size = pageSize || 5;
 
-    var skip = (index-1)*size;
+    var skip = (index - 1) * size;
 
-    var query ;
+    var query;
 
-    if(name){
-        query = Weapon.find(name).sort('uploadTime').skip(skip).limit(size);
-    }else{
+    if (name) {
+        query = Weapon.find({name: name}).sort('uploadTime').skip(skip).limit(size);
+    } else {
         query = Weapon.find({}).sort('uploadTime').skip(skip).limit(size);
     }
 
-    query.exec(function(error,results){
-        if(error){
+    query.exec(function (error, results) {
+        if (error) {
             callback(err, null);
         } else {
-            Weapon.count(name,function(error,count){
-                if(error){
-                    callback(error,null);
-                }else{
-                    var pageCount = Math.ceil(count/size);
-                    callback(null,pageCount,results);
+            Weapon.count(name, function (error, count) {
+                if (error) {
+                    callback(error, null);
+                } else {
+                    var pageCount = Math.ceil(count / size);
+                    callback(null, pageCount, results);
                 }
             });
         }
@@ -71,7 +71,17 @@ exports.getByPage = function (name, pageIndex, pageSize, callback) {
  * @param level
  * @param color
  */
-exports.findCondition = function(playRole,level,color){
+exports.findCondition = function (playRole, level, color, callback) {
+
+    var query = Weapon.find({playRole: playRole, level: level, color: color});
+
+    query.exec(function (error, results) {
+        if (error) {
+            callback(err, null);
+        } else {
+            callback(null, results);
+        }
+    });
 
 }
 

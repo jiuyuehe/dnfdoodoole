@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd34624d-85a5-4746-b020-d571c87baf5d" name="Default" comment="">
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\pics\2.PNG" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\pics\Hydrangeas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\pics\Jellyfish.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\pics\undefinedundefinedundefined1378883728630.jpg" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\pics\undefinedundefinedundefined1379904836387.png" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\pics\undefinedundefinedundefined1379905237322.txt" afterPath="" />
-      <change type="DELETED" beforePath="H:\github\dnfdoodoole\public\images\upload\1fa9dbaec61cebe60990a6423909ab31.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/admin.js" afterPath="$PROJECT_DIR$/routes/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/back.js" afterPath="$PROJECT_DIR$/public/javascripts/back.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/records" afterPath="$PROJECT_DIR$/doc/records" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/weapon.js" afterPath="$PROJECT_DIR$/models/weapon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/manager/weapon_add.ejs" afterPath="$PROJECT_DIR$/views/manager/weapon_add.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.js" afterPath="$PROJECT_DIR$/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/up.js" afterPath="$PROJECT_DIR$/public/javascripts/up.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/manager/user_mgr.ejs" afterPath="$PROJECT_DIR$/views/manager/user_mgr.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/weapon_dao.js" afterPath="$PROJECT_DIR$/dao/weapon_dao.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/manager/weapon_mgr.ejs" afterPath="$PROJECT_DIR$/views/manager/weapon_mgr.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dnfdoodoole.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382489522187" ignored="false" />
+    <file path="/Dummy.txt" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382688241534" ignored="false" />
     <file path="/mongodb.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377247296592" ignored="false" />
     <file path="/app.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382322267832" ignored="false" />
     <file path="/topLink.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377672489504" ignored="false" />
@@ -28,33 +21,33 @@
     <file path="/user.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378189990709" ignored="false" />
     <file path="/registerModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377244398265" ignored="false" />
     <file path="/index.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377673649223" ignored="false" />
-    <file path="/up.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1381384605133" ignored="false" />
+    <file path="/up.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382690169952" ignored="false" />
     <file path="/header.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377133754681" ignored="false" />
     <file path="/loginModal.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377245209769" ignored="false" />
     <file path="/userDao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377252384950" ignored="false" />
     <file path="/user_dao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378263799234" ignored="false" />
-    <file path="/routes.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378456758467" ignored="false" />
+    <file path="/routes.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382600018366" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/app.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382075630775" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/routes.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377582290121" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/views/index.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382075229489" ignored="false" />
     <file path="/index.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382075229489" ignored="false" />
     <file path="D:/node/test_mongooos_undersocer/routes/admin.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382076718259" ignored="false" />
-    <file path="/admin.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382493437462" ignored="false" />
+    <file path="/admin.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382599867040" ignored="false" />
     <file path="/records" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382492125930" ignored="false" />
     <file path="/admin.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377672300006" ignored="false" />
-    <file path="/back.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382509185485" ignored="false" />
+    <file path="/back.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382586060432" ignored="false" />
     <file path="/back_header.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377671062197" ignored="false" />
     <file path="/Main.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377673128726" ignored="false" />
     <file path="/admin_login.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378173537042" ignored="false" />
     <file path="/main.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378171490161" ignored="false" />
     <file path="/dummy.xml" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1377760451370" ignored="false" />
     <file path="/left_bar.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378273429334" ignored="false" />
-    <file path="/user_mgr.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378264021500" ignored="false" />
+    <file path="/user_mgr.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382585423260" ignored="false" />
     <file path="/doodooleUtils.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378263001436" ignored="false" />
-    <file path="/weapon_mgr.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382508097133" ignored="false" />
+    <file path="/weapon_mgr.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382585951068" ignored="false" />
     <file path="/dateTime.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378275793883" ignored="false" />
     <file path="/weapon.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382493313036" ignored="false" />
-    <file path="/weapon_dao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1378352707224" ignored="false" />
+    <file path="/weapon_dao.js" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382599422109" ignored="false" />
     <file path="/weapon_add.ejs" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1382492843372" ignored="false" />
     <file path="/qqq.html" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1379571368356" ignored="false" />
     <file path="/custom1.css" changelist="bd34624d-85a5-4746-b020-d571c87baf5d" time="1379576042070" ignored="false" />
@@ -79,46 +72,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="up.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="up.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="13" selection-start="1979" selection-end="2034" vertical-scroll-proportion="0.0">
+            <state line="64" column="61" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.43661973">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="back.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="back.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/back.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="11" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.4597701">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weapon_add.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/manager/weapon_add.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="48" selection-start="502" selection-end="502" vertical-scroll-proportion="26.37931">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="records" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/records">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uper.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/uper.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="60" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+            <state line="141" column="0" selection-start="3521" selection-end="3792" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +93,16 @@
       <file leaf-file-name="user_mgr.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/manager/user_mgr.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="82" selection-start="563" selection-end="563" vertical-scroll-proportion="-12.413794">
+            <state line="2" column="22" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uper.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/uper.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="87" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,7 +111,16 @@
       <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="59" selection-start="6195" selection-end="6195" vertical-scroll-proportion="0.0">
+            <state line="177" column="8" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weapon_dao.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/weapon_dao.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="34" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,25 +129,34 @@
       <file leaf-file-name="weapon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/weapon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="464" selection-end="472" vertical-scroll-proportion="0.0">
+            <state line="14" column="26" selection-start="252" selection-end="331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weapon_mgr.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/manager/weapon_mgr.ejs">
+      <file leaf-file-name="user_dao.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/user_dao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="39" selection-start="1819" selection-end="1827" vertical-scroll-proportion="-8.724138">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+            <state line="17" column="46" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="52" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,30 +180,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dao/weapon_dao.js" />
-        <option value="$PROJECT_DIR$/routes.js" />
-        <option value="E:/wamp/www/wp-content/themes/appply/custom1.css" />
         <option value="$PROJECT_DIR$/views/qqq.html" />
         <option value="$PROJECT_DIR$/settings.js" />
         <option value="$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js" />
         <option value="$PROJECT_DIR$/views/uper.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/up.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/doc/records" />
         <option value="$PROJECT_DIR$/models/weapon.js" />
-        <option value="$PROJECT_DIR$/routes/admin.js" />
         <option value="$PROJECT_DIR$/views/manager/weapon_add.ejs" />
+        <option value="$PROJECT_DIR$/views/manager/user_mgr.ejs" />
         <option value="$PROJECT_DIR$/views/manager/weapon_mgr.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/back.js" />
+        <option value="$PROJECT_DIR$/dao/weapon_dao.js" />
+        <option value="$PROJECT_DIR$/routes/admin.js" />
+        <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/up.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="141" />
-    <option name="y" value="20" />
-    <option name="width" value="1442" />
-    <option name="height" value="927" />
+    <option name="x" value="349" />
+    <option name="y" value="87" />
+    <option name="width" value="1387" />
+    <option name="height" value="924" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -281,11 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,52 +310,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dnfdoodoole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -376,7 +319,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.js" />
+    <property name="last_opened_file_path" value="D:/node/test_mongooos_undersocer" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -468,17 +411,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="141" y="20" width="1442" height="927" extended-state="0" />
-    <editor active="true" />
+    <frame x="349" y="87" width="1387" height="924" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18830243" sideWeight="0.75065273" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13956942" sideWeight="0.74580336" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24934725" sideWeight="0.9992837" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25419664" sideWeight="0.9992837" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,20 +491,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/connect-mongo/node_modules/mongodb/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/connect-mongo/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -572,86 +505,92 @@
         <state line="46" column="62" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-0.28070176" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/doc/records">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="64" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="45" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
+        <state line="8" column="36" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/manager/weapon_add.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="48" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/manager/weapon_mgr.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="37" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/manager/user_mgr.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/uper.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
+        <state line="41" column="87" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/records">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="36" column="52" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
+    <entry file="file://$PROJECT_DIR$/dao/user_dao.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1979" selection-end="2034" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/weapon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="464" selection-end="472" vertical-scroll-proportion="0.0">
+        <state line="14" column="26" selection-start="252" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/weapon_dao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="34" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="59" selection-start="6195" selection-end="6195" vertical-scroll-proportion="0.0">
+        <state line="177" column="8" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/user_mgr.ejs">
+    <entry file="file://$PROJECT_DIR$/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="82" selection-start="563" selection-end="563" vertical-scroll-proportion="-12.413794">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/weapon_add.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="502" selection-end="502" vertical-scroll-proportion="26.37931">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/manager/weapon_mgr.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="39" selection-start="1819" selection-end="1827" vertical-scroll-proportion="-8.724138">
+        <state line="17" column="46" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/back.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="11" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.4597701">
+        <state line="141" column="0" selection-start="3521" selection-end="3792" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/up.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="61" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.43661973">
           <folding />
         </state>
       </provider>
